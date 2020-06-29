@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+header {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  background: wheat;
+}
+
+nav {
+  min-height: 10vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1,
+nav ul {
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section h2 {
+  font-size: 100px;
+}
+
+.home {
+  background: linear-gradient(to right top, #f288e2, #487eb0);
+}
+
+.projects {
+  background: linear-gradient(to right top, #688bb9, #5ec89c);
+}
+
+.contact {
+  background: linear-gradient(to right top, #f288e2, #b0b95b);
+}
+
+.bubble {
+  position: absolute;
+  z-index: -2;
+  background: linear-gradient(to right top, #f288e2, #487eb0);
+  transform: scale(2);
+  transition: all 0.1s ease-in-out;
+  /* background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000; */
+}
+
+.bubble:hover {
+  border-bottom: 5px solid #27b3b3;
+  transition: all 1s ease-in-out;
+}
