@@ -16,8 +16,10 @@ function navCheck(entries) {
   entries.forEach((entry) => {
     const className = entry.target.className;
     const activeAnchor = document.querySelector(`[data-page=${className}]`);
+    console.log(entry);
     const gradientInd = entry.target.getAttribute("data-index");
     const coords = activeAnchor.getBoundingClientRect();
+    console.log(coords);
     const directions = {
       height: coords.height,
       width: coords.width,
